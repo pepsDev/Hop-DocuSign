@@ -102,7 +102,7 @@ class Install extends Migration
                 [
                     'id' => $this->primaryKey(),
                     'token' => $this->string(255)->notNull()->defaultValue(''),
-                    'signing_url' => $this->text()->notNull()->defaultValue(''),
+                    'signing_url' => $this->text()->notNull(),
                     'dateCreated' => $this->dateTime()->notNull(),
                     'dateUpdated' => $this->dateTime()->notNull(),
                     'uid' => $this->integer()->notNull(),
